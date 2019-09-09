@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="list">
+    <block
+      wx:for="{{list}}"
+      wx:key="{{item.id}}"
+    >
+      <product  item="{{item}}"/>
+    </block>
+  </view>
+</view>

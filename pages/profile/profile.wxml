@@ -1,0 +1,23 @@
+<view>
+  <view class='touxiang'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class='nikename'>
+    昵称：<open-data type="userNickName"></open-data>
+  </view>
+  <view class='sex'>
+    性别:<open-data type="userGender" lang="zh_CN"></open-data>
+  </view>
+  
+  <map 
+    id="map" 
+    longitude="{{longitude}}" 
+    latitude="{{latitude}}" 
+    scale="16" 
+    controls="{{true}}" 
+    markers="{{markers}}" 
+    show-location 
+    style="width: 100%; height: 300px;"
+  ></map>
+
+</view>

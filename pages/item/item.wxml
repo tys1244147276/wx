@@ -1,0 +1,25 @@
+<view class="container">
+    <view scroll-y="true" class="container">
+      <view class="meta">
+        <block wx:if="{{detail.title}}">
+   <swiper class='swp' indicator-dots="true" autoplay="true"        interval="3000" duration="1000" circular>
+
+      <swiper-item
+        wx:for="{{detail.images}}"
+        wx:key="{{index}}"
+      >
+        <image class='nav-img' src="{{item.url}}" mode="aspectFill"/>
+      </swiper-item>
+      
+    </swiper>
+        <text class="title">{{detail.title}}</text>
+        <text class="info">发布时间：{{detail.time}}</text>
+        <text class="info">来源：{{detail.source}}</text>
+    
+        <text class="content" wx:for="{{detail.summary}}" wx:key="{{index}}">{{item}}</text>
+  </block>
+
+  <view wx:else>骨架屏</view>
+    </view>
+  </view>
+</view>

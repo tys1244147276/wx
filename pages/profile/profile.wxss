@@ -1,0 +1,13 @@
+.touxiang{
+  width:100rpx;
+  height:100rpx;
+  margin:20rpx auto;
+  border-radius: 50%;
+}
+
+.nikename{
+  text-align: center
+}
+.sex{
+  text-align: center
+}

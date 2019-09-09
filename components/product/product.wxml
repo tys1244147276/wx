@@ -1,0 +1,7 @@
+<view class="item" bindtap='clickHandler'>
+  <image class="poster" src="{{item.image[0].url}}"/>
+  <view class="meta">
+    <text class="title">{{item.title}}</text>
+    <text class="sub-title">发布时间：{{item.time}}</text>
+  </view>
+</view>
